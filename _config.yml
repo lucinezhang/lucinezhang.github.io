@@ -1,9 +1,0 @@
-title: Lucine's Web
-tagline: Everything that drowns me makes me wanna fly.
-owner: Luxin Zhang
-
-rouge: true
-permalink: '/:title'
-markdown: kramdown
-
-exclude: [README.md]
