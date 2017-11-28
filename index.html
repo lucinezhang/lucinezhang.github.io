@@ -39,9 +39,13 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="" id="projects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="projects">
-						<a class="dropdown-item" href="#Project1">Mine Sweeper</a>
-						<a class="dropdown-item" href="#Project2">Yuzhe</a>
-						<a class="dropdown-item" href="#Project3">Sth else here</a>
+						<a class="dropdown-item" href="#Project1">Gesture Recognition</a>
+						<a class="dropdown-item" href="#Project2">Text and Image Classification</a>
+						<a class="dropdown-item" href="#Project3">Face Detection and Recognition</a>
+						<a class="dropdown-item" href="#Project4">Data Visualization</a>
+						<a class="dropdown-item" href="#Project5">Robots Control</a>
+						<a class="dropdown-item" href="#Project6">Image Processing</a>
+						<a class="dropdown-item" href="#Project7">Mine Sweeper</a>
 					</div>
 				</li>
 				<li class="nav-item">
@@ -132,12 +136,12 @@
 				<img src="img/gaze_network.png" height="180px">
 				<img src="img/action_network.png" height="150px">
 				<br>
-				<p>When an intelligent agent learns to imitate human visuomotor behaviors, it may benefit from knowing where the human is allocating visual attention, which can be inferred from their gaze. A wealth of information regarding intelligent decision making is conveyed by human gaze allocation; hence, exploiting such information has the potential to improve the agent's performance. With this motivation, we collect high-quality human action and gaze data while playing Atari games in a carefully controlled experimental setting. Using these data, we first train a deep neural network that can predict human gaze positions and visual attention with high accuracy (the gaze network) and then train another deep neural network to predict human actions (the policy network). Including the gaze predictions from the gaze network in the policy network significantly improves the action prediction accuracy. We conclude that it is feasible to learn human attention in the given visuomotor tasks, and that combining the learned attention model with imitation learning yields promising results.</p><br>
+				<p>When an intelligent agent learns to imitate human visuomotor behaviors, it may benefit from knowing where the human is allocating visual attention, which can be inferred from their gaze. A wealth of information regarding intelligent decision making is conveyed by human gaze allocation; hence, exploiting such information has the potential to improve the agent's performance. With this motivation, we collect high-quality human action and gaze data while playing Atari games in a carefully controlled experimental setting. Using these data, we first train a deep neural network that can predict human gaze positions and visual attention with high accuracy (the gaze network) and then train another deep neural network to predict human actions (the policy network). Including the gaze predictions from the gaze network in the policy network significantly improves the action prediction accuracy. We conclude that it is feasible to learn human attention in the given visuomotor tasks, and that combining the learned attention model with imitation learning yields promising results.<br><br>
 
-				<p>My work was to model visual attention from human eye movement data using a deep learning approach. I helped conduct psychophysical experiments that collect high-precision human eye tracking data when playing video games, and designed a three-channel convolution-deconvolution deep neural network, that simultaneously takes game image frames, motion information (optical flow), and image saliency information to predict where the human would allocate visual attention when playing the game. Eventually I obtained a deep neural network model that can predict human visual attention with high precision. Now we are experimenting on using this visual attention model to facilitate the learning process of deep reinforcement learning and deep imitation learning algorithms.
+				My work was to model visual attention from human eye movement data using a deep learning approach. I helped conduct psychophysical experiments that collect high-precision human eye tracking data when playing video games, and designed a three-channel convolution-deconvolution deep neural network, that simultaneously takes game image frames, motion information (optical flow), and image saliency information to predict where the human would allocate visual attention when playing the game. Eventually I obtained a deep neural network model that can predict human visual attention with high precision. Now we are experimenting on using this visual attention model to facilitate the learning process of deep reinforcement learning and deep imitation learning algorithms.
 				</p><hr>
 				
-			<h4 style="padding-top: 80px; margin-top: -80px;">Text Effects Transfer</h4>
+			<h4 style="padding-top: 80px; margin-top: -80px;">Text effects transfer</h4>
 				<p>Time: <i>Mar. 2017 - Jun. 2017</i></p>
 				<img src="img/text_transfer.png" height="180px">
 				<br>
@@ -147,7 +151,7 @@
 			<h4 style="padding-top: 80px; margin-top: -80px;">Cultural heritage protection based on virtual reality</h4>
 				<p>Time: <i>Mar. 2016 - Jun. 2016</i></p>
 				<br>
-				<p>I participated in an interdisciplinary project between computer vision and archaeological conservation, in which we attempted to repair the faces of the Buddha of Longmen Grottoes using archived photos and display them on a virtual reality (VR) system for access in a digital museum. I was responsible for designing the VR user interface based on gesture recognition to enable the visitors to instruct the system to display the images, show text descriptions, or start the voice guide. I learned to use both a Hidden Markov Model and a 3D-convolutional neural network to complete the dynamic gesture classification.
+				<p>I participated in an interdisciplinary project between computer vision and archaeological conservation, in which we attempted to repair the faces of the Buddha of Longmen Grottoes using archived photos and display them on a virtual reality (VR) system. I was responsible for designing the VR user interface based on gesture recognition to enable the visitors to instruct the system to display the images, show text descriptions, or start the voice guide. I used Hidden Markov Model to implement a three-class gesture recognition, achieving an accuracy of 96% which met the requirements of the project.
 				</p><hr>
 		
 		<br>
@@ -200,41 +204,6 @@
 			</div>
 		</div><hr>
 		
-		<!--
-		<div class="row">
-			<div class="col-md-3">
-				<img class="img-fluid img-rounded" src="files/vetrack.png" alt="">
-			</div>
-			<div class="col-md-9">
-			<b>VeTrack: Real Time Vehicle Tracking in Uninstrumented Indoor Environments</b><br>
-			<a href="http://people.csail.mit.edu/mingmin/">M. Zhao</a>,
-			R. Gao,
-			T. Ye,
-			<a href="http://www.ece.stonybrook.edu/~fanye/index2.html">F. Ye</a>,
-			<a href="http://www.idm.pku.edu.cn/staff/wangyizhou/">Y. Wang</a> and
-			<a href="http://ceca.pku.edu.cn/en/team.php?action=show&member_id=18">G. Luo</a>
-			<br>
-			<i><a target="_blank" href="http://sensys.acm.org/2015/">ACM SenSys¡¯15</a></i>, Seoul, South Korea, November 2015<br>
-			<a href="papers/vetrack-paper.pdf"> <small>[PDF]</small></a>
-			</div>
-		</div><hr>
-
-		<div class="row">
-			<div class="col-md-3">
-				<img class="img-fluid img-rounded" src="files/predictencoding.png" alt="">
-			</div>
-			<div class="col-md-9">
-			<b>Predictive Encoding of Contextual Relationships for Perceptual Inference, Interpolation and Prediction</b><br>
-			<a href="http://people.csail.mit.edu/mingmin/">M. Zhao</a>,
-			C. Zhuang,
-			<a href="http://www.idm.pku.edu.cn/staff/wangyizhou/">Y. Wang</a> and
-			<a href="http://www.cnbc.cmu.edu/~tai/">T.S. Lee</a>
-			<br>
-			<i><a target="_blank" href="http://www.iclr.cc/doku.php?id=iclr2015:main">ICLR¡¯15</a></i>, San Diego, California, May 2015<br>
-			<a href="papers/predictencoding-paper.pdf"> <small>[PDF]</small></a>
-			</div>
-		</div><hr> -->
-		
 		<br>
 	</div><br>
 	
@@ -243,13 +212,54 @@
 	<div class="container">
 		<h3 id="Projects" style="padding-top: 80px; margin-top: -80px;">Projects</h3><hr>
 		
-			<h4 id="Project1" style="padding-top: 80px; margin-top: -80px;">Mine Sweeper</h4>
-				<img style="">
+			<h4 id="Project1" style="padding-top: 80px; margin-top: -80px;">Static and Dynamic Gesture Recognition</h4>
+				<img src="img/static_gesture.png" height="180px">
+				<img src="img/3DCNN.png" height="180px">
+				<br>
+				<p>We implemented static gesture recognition using a convolutional neural network, obtained an accuracy of 90% on <a target="_blank" href="http://www.idiap.ch/resource/gestures/">Sebastien Marcel Static Hand Posture Database</a> (6 categories). We also extended to use this gesture recognition model to control the Dino Jump game.<br>
+					
+				We also implemented dynamic gesture recognition using a two-stream 3D convolutional neural network, obtained an accuracy of 91% on <a target="_blank" href="http://lshao.staff.shef.ac.uk/data/SheffieldKinectGesture.htm">Sheffield KInect Gesture (SKIG) Dataset</a> (10 categories).
+				</p>
 		
 			<hr>
 			
-			<h4 id="Project2" style="padding-top: 80px; margin-top: -80px;">Yuzhe</h4>
+			<h4 id="Project2" style="padding-top: 80px; margin-top: -80px;">Text and Image Classification</h4>
+				<img src="img/text_classify.png" height="180px">
+				<img src="img/image_classify.png" height="180px">
+				<br>
+				<p>We implemented text classification using <i>scikit-learn</i>. Compared the performance of different classifiers (Naive Bayesian, SVM, SGD, Decision Tree, KNN, K-means), achieved 85% accuracy (9 categories).<br>
+					
+				We also implemented images classification using <i>Keras</i> on a subset of ImageNet, achieved 80% accuracy (19 categories). We designed a CNN which consists of 3 convolutional layers followed by pooling layers and one fully connected layer.
+				</p>
+				<a target="_blank" href="https://github.com/lucinezhang/Machine-Learning--Classification"> <small>[Source Code]</small></a>
+
+			<hr>
+
+			<h4 id="Project3" style="padding-top: 80px; margin-top: -80px;">Face Detection and Recognition</h4>
 				<img style="">
+
+			<hr>
+
+			<h4 id="Project4" style="padding-top: 80px; margin-top: -80px;">Visualizing the Bank Marketing Data Set</h4>
+				<img style="">
+
+			<hr>
+
+			<h4 id="Project5" style="padding-top: 80px; margin-top: -80px;">Design and Control Robots In Simulation</h4>
+				<img style="">
+
+			<hr>
+
+			<h4 id="Project6" style="padding-top: 80px; margin-top: -80px;">Blend Pictures Seamlessly with Poisson Image Editing
+</h4>
+				<img style="">
+
+			<hr>
+
+			<h4 id="Project7" style="padding-top: 80px; margin-top: -80px;">Mine Sweeper</h4>
+				<img style="">
+
+
 		<br>
 
 	</div><br>
