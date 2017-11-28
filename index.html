@@ -125,20 +125,29 @@
 	<!-- Research -->
 	<div class="container">
 		<h3 id="Research" style="padding-top: 80px; margin-top: -80px;">Research</h3><hr>
-			<h4 style="padding-top: 80px; margin-top: -80px;">Research No.1</h4>
-				<p>Time: <i>Apr. 2016 - Jun. 2016</i></p>
-				<img src="img/pku.png" height="180px">
-				<img src="img/utaustin.png" height="180px">
-				<p>Air Quality index (AQI) monitoring is crucial for public health. Unlike traditional coarse-grained 2D AQI map built by static sensors, we design a mobile sensing system based on UAV to construct realtime 3D AQI map. We also focus on the fine-grained AQI distribution, as the AQI value has intrinsic changes in fine-grained area.
-				   We propose a novel distribution model that consists of a linear part using Gaussian Plume model (GPM), and a non-linear part using Artificial Neural Networks (ANN), to realize the precisely prediction of AQI in a given fine-grained area.
+			<h4 style="padding-top: 80px; margin-top: -80px;">Modeling human attention for deep imitation learning</h4>
+				<p>Time: <i>Jul. 2017 - Present</i></p>
+				<img src="img/seaquest.png" height="180px">
+				<img src="img/breakout.png" height="180px">
+				<img src="img/gaze_network.png" height="180px">
+				<img src="img/action_network.png" height="150px">
+				<br>
+				<p>When an intelligent agent learns to imitate human visuomotor behaviors, it may benefit from knowing where the human is allocating visual attention, which can be inferred from their gaze. A wealth of information regarding intelligent decision making is conveyed by human gaze allocation; hence, exploiting such information has the potential to improve the agent's performance. With this motivation, we collect high-quality human action and gaze data while playing Atari games in a carefully controlled experimental setting. Using these data, we first train a deep neural network that can predict human gaze positions and visual attention with high accuracy (the gaze network) and then train another deep neural network to predict human actions (the policy network). Including the gaze predictions from the gaze network in the policy network significantly improves the action prediction accuracy. We conclude that it is feasible to learn human attention in the given visuomotor tasks, and that combining the learned attention model with imitation learning yields promising results.</p><br>
+
+				<p>My work was to model visual attention from human eye movement data using a deep learning approach. I helped conduct psychophysical experiments that collect high-precision human eye tracking data when playing video games, and designed a three-channel convolution-deconvolution deep neural network, that simultaneously takes game image frames, motion information (optical flow), and image saliency information to predict where the human would allocate visual attention when playing the game. Eventually I obtained a deep neural network model that can predict human visual attention with high precision. Now we are experimenting on using this visual attention model to facilitate the learning process of deep reinforcement learning and deep imitation learning algorithms.
 				</p><hr>
 				
-			<h4 style="padding-top: 80px; margin-top: -80px;">Research No.2</h4>
-				<p>Time: <i>Jul. 2017 - Present</i></p>
-				<img src="img/pku.png" height="180px">
-				<img src="img/utaustin.png" height="180px">
-				<p>Air Quality index (AQI) monitoring is crucial for public health. Unlike traditional coarse-grained 2D AQI map built by static sensors, we design a mobile sensing system based on UAV to construct realtime 3D AQI map. We also focus on the fine-grained AQI distribution, as the AQI value has intrinsic changes in fine-grained area.
-				   We propose a novel distribution model that consists of a linear part using Gaussian Plume model (GPM), and a non-linear part using Artificial Neural Networks (ANN), to realize the precisely prediction of AQI in a given fine-grained area.
+			<h4 style="padding-top: 80px; margin-top: -80px;">Text Effects Transfer</h4>
+				<p>Time: <i>Mar. 2017 - Jun. 2017</i></p>
+				<img src="img/text_transfer.png" height="180px">
+				<br>
+				<p>Text effects transfer is a pretty novel research area. We studied the problem of transferring the text styles from source text image to target text image, that is, given a source stylized image S' and the target text image T, then automatically generates the target stylized image T' with the special e ects as in S'. I tried different image segmentation methods to create a text mask for the stylized image S', like KNN clustering based on pixels' feature vectors and level set segmentation based on shape priors.
+				</p><hr>
+
+			<h4 style="padding-top: 80px; margin-top: -80px;">Cultural heritage protection based on virtual reality</h4>
+				<p>Time: <i>Mar. 2016 - Jun. 2016</i></p>
+				<br>
+				<p>I participated in an interdisciplinary project between computer vision and archaeological conservation, in which we attempted to repair the faces of the Buddha of Longmen Grottoes using archived photos and display them on a virtual reality (VR) system for access in a digital museum. I was responsible for designing the VR user interface based on gesture recognition to enable the visitors to instruct the system to display the images, show text descriptions, or start the voice guide. I learned to use both a Hidden Markov Model and a 3D-convolutional neural network to complete the dynamic gesture classification.
 				</p><hr>
 		
 		<br>
