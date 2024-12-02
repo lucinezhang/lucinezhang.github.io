@@ -2,83 +2,124 @@
 <html lang="en">
 
 <head>
-	<title>Welcome to Luxin Zhang's Homepage!</title>
+	<!-- Title -->
+	<title>Luxin Zhang</title>
 
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- https://fontawesome.com/cheatsheet -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+    <link rel="stylesheet" href="static/styles.css">
 
-	<!-- Custom styles for this template -->
-	<link href="files/jumbotron.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124898353-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+	  	function gtag(){dataLayer.push(arguments);}
+	  	gtag('js', new Date());
+	  	gtag('config', 'UA-124898353-1');
+	</script>
+
+	<!-- Show more content -->
+	<script type="text/javascript">
+		function toggle_vis(id) {
+	    	// var e = document.getElementById(id);
+	    	var e = document.getElementsByClassName(id);
+			var showText = document.getElementById("showText");
+			for (var i = 0; i < e.length; i++) {
+		    	if (e[i].style.display == "none") {
+		        	e[i].style.display = "inline";
+	    			showText.innerHTML = "[Show less]";
+		    	} else {
+		    		e[i].style.display = "none";
+		    		showText.innerHTML = "[Show more]";
+		    	}
+		    }
+	    }
+	</script>
+
+	<!-- Custom br space -->
+	<style type="text/css">
+        .brsmall {
+            display: block;
+            margin-bottom: 0.75em;
+        }
+        .brmedium {
+            display: block;
+            margin-bottom: 1em;
+        }
+    </style>
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-		<a class="navbar-brand" href="#">Luxin Zhang</a>
+		<div class="container">
+			<a class="navbar-brand" href="#">Luxin Zhang</a>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
-	  		<span class="navbar-toggler-icon"></span>
-		</button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-		<div class="collapse navbar-collapse" id="navbarToggle">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#Education">Education</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#Experience">Experience</a>
-				</li>
-				<!-- <li class="nav-item">
-					<a class="nav-link" href="#Research">Research</a>
-				</li> -->
-				<li class="nav-item">
-					<a class="nav-link" href="#Publications">Publications</a>
-				</li>
-				<!-- <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="" id="projects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="projects">
-						<a class="dropdown-item" href="#Project1">Gesture Recognition</a>
-						<a class="dropdown-item" href="#Project2">Text and Image Classification</a>
-						<a class="dropdown-item" href="#Project3">Face Detection and Recognition</a>
-						<a class="dropdown-item" href="#Project4">Data Visualization</a>
-						<a class="dropdown-item" href="#Project5">Robots Control</a>
-						<a class="dropdown-item" href="#Project6">Image Processing</a>
-						<a class="dropdown-item" href="#Project7">Mine Sweeper</a>
-					</div>
-				</li> -->
-				<li class="nav-item">
-					<a class="nav-link" href="#Honors">Honors</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#Contact">Contact</a>
-				</li>
-			</ul>
+			<div class="collapse navbar-collapse" id="navbarToggle">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Experience">Experience</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Publications">Publications</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 
-	<div class="container" style="padding-top: 20px; font-size: 20px">
+	<div class="container" style="padding-top: 20px">
 		<div class="row">
-			<div class="col-md-3", style="padding-right: 0px; padding-top: 62px">
-				<img class="img-responsive img-rounded" src="img/Luxin.jpeg" alt="" style="max-width: 260px">
+			<div class="col-md-3", style="padding-top: 65px">
+				<img class="img-responsive img-rounded" src="img/luxin.png" alt="" style="max-width: 240px; border:2px solid gray">
 			</div>
-			<div class="col-md-9">
-			<br><br><br><br>
+			<div class="col-md-9", style="padding-top: 65px">
 
-			<b>Luxin Zhang</b><br>
-			<b><a target="_blank" href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/">Master of Science in Computer Vision (MSCV)</a></b><br>
-			<b><a target="_blank" href="https://www.ri.cmu.edu/">The Robotics Institute</a></b><br>
-			<b><a target="_blank" href="https://www.scs.cmu.edu/">School of Computer Science</a></b><br>
-			<b><a target="_blank" href="https://www.cmu.edu/">Carnegie Mellon University</a></b><br>
-			
-			<br><br>
+			<h3>Luxin Zhang</h3>
+			<p>Research Engineer<br>
+			GenAI, Meta<br/></p>
 
-			<a href="static/Luxin Zhang_CV.pdf">CV</a> | <a href="https://github.com/lucinezhang">Github</a> | <a href="https://www.linkedin.com/in/luxin-zhang-cmu/">LinkedIn</a></p>
+
+			<p>
+				I am a research engineer at Meta GenAI.
+				Prior to that, I received my master's degree from
+				<a target="_blank" href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/">Master of Science in Computer Vision (MSCV)</a>
+				program in
+				<a target="_blank" href="https://www.ri.cmu.edu/">The Robotics Institute</a> at
+				<a target="_blank" href="https://www.cmu.edu/">Carnegie Mellon University</a>.
+
+				I completed my bachelor's study at
+				<a target="_blank" href="http://www.cis.pku.edu.cn/english_index.htm">Department of Intelligence Science</a>,
+				<a target="_blank" href="http://eecs.pku.edu.cn/EN/">School of EECS</a>,
+				<a target="_blank" href="http://english.pku.edu.cn/">Peking University</a>.
+
+				I am interested in Generative AI, Computer Vision and Machine Learning.
+			</p>
+
+			<br>
+
+			<p>
+				<a target="_blank" href="https://scholar.google.com/citations?user=RMfu8yEAAAAJ&hl=en"><font color="black"><i class="ai ai-google-scholar ai-lg"></i></font></a>&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+				<a target="_blank" href="https://github.com/lucinezhang"><font color="black"><i class="fab fa-github fa-lg"></i></font></a>&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+				<a target="_blank" href="https://www.linkedin.com/in/luxin-zhang-cmu/"><font color="black"><i class="fab fa-linkedin fa-lg"></i></font></a>&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+				Email:</span>&nbsp; <tt>luxinz[at]meta.com</tt>&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+				<a href="static/CV_Luxin.pdf">Curriculum Vitae</a>
 			</p>
 
 			</div>
@@ -86,51 +127,14 @@
 	</div><br><br>
 
 
-	<!-- About me -->
-	<div class="container">
-		<h3 id="About Me" style="padding-top: 80px; margin-top: -80px;">About Me</h3><hr>
-		<p>Hi, I'm Luxin Zhang!</br>
-
-			I'm a software engineer at Facebook.
-
-			I was a graduate student enrolled in the 
-			<b><a target="_blank" href="https://www.ri.cmu.edu/education/academic-programs/master-of-science-computer-vision/">Master of Science in Computer Vision (MSCV)</a></b> 
-			program in 
-			<b><a target="_blank" href="https://www.ri.cmu.edu/">The Robotics Institute</a></b> at 
-			<b><a target="_blank" href="https://www.cmu.edu/">Carnegie Mellon University</a></b>.<br>
-
-			I was an undergraduate student at 
-			<b><a target="_blank" href="http://www.cis.pku.edu.cn/english_index.htm">Department of Intelligence Science</a></b>, 
-			<b><a target="_blank" href="http://eecs.pku.edu.cn/EN/">School of EECS</a></b>, 
-			<b><a target="_blank" href="http://english.pku.edu.cn/">Peking University</a></b>.<br>
-
-			I was a visiting student at
-			<b><a target="_blank" href="https://www.cs.utexas.edu/">Department of Computer Science</a></b>, 
-			<b><a target="_blank" href="https://www.utexas.edu/">The University of Texas at Austin</a></b>, 
-			instructed by Professor 
-			<b><a target="_blank" href="http://www.cs.utexas.edu/~dana/">Dana Ballard</a></b> 
-			during July and August 2017.<br>
-
-			I was an intern in 
-			<b><a target="_blank" href="https://www.microsoft.com/en-us/research/group/bdm/">Big Data Mining Group</a></b> at 
-			<b><a target="_blank" href="http://www.msra.cn/">Microsoft Research Asia</a></b>, supervised by Dr. 
-			<b><a target="_blank" href="https://www.microsoft.com/en-us/research/people/borjekar/">Borje Karlsson</a></b> 
-			from September 2017 to January 2018.<br>
-
-			I am interested in Machine Learning, Computer Vision and Artificial Intelligence.
-		<hr>
-
-		<br>
-	</div><br>
-	
 	<!-- Education -->
-	<div class="container">
+	<!-- <div class="container">
 		<h3 id="Education" style="padding-top: 80px; margin-top: -80px;">Educations</h3><hr>
 		<table class="imgtable"><tr><td>
 			<img src="img/cmu.png" alt="CMU" width="100px" height="100px" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			<td align="left">
 				<p><i>Aug. 2018 - Dec. 2019</i> <br>
-				<a target="_blank" href="https://www.scs.cmu.edu/">School of Computer Science</a>, 
+				<a target="_blank" href="https://www.scs.cmu.edu/">School of Computer Science</a>,
 				<b><a target="_blank" href="https://www.cmu.edu/">Carnegie Mellon University</a></b><br>
 				Master of Science in Computer Vision <br>
 				</p>
@@ -140,65 +144,36 @@
 			<img src="img/pku.png" alt="Peking" width="100px" height="100px" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			<td align="left">
 				<p><i>Sep. 2014 - Jul. 2018</i> <br>
-				<a target="_blank" href="http://www.cis.pku.edu.cn/english_index.htm">Department of Computer Intelligence Science</a>, 
+				<a target="_blank" href="http://www.cis.pku.edu.cn/english_index.htm">Department of Computer Intelligence Science</a>,
 				<b><a target="_blank" href="http://english.pku.edu.cn/">Peking University</a></b><br>
 				Bachelor of Science <br>
-				<b>Overall GPA: 3.56/4.0 &nbsp; Junior GPA: 3.70/4.0</b>
-				</p>
-		</td></tr></table>
-
-		<table class="imgtable"><tr><td>
-			<img src="img/utaustin.png" alt="UT-Austin" width="100px" height="100px" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td align="left">
-				<p><i>Jul. 2017 - Sep. 2017</i> <br>
-				<a target="_blank" href="https://www.cs.utexas.edu/">School of Computer Science</a>, 
-				<b><a target="_blank" href="https://www.utexas.edu/">The University of Texas at Austin</a></b> <br>
-				<a target="_blank" href="http://www.cs.utexas.edu/~dana/vrlab/">Vision, Cognition, and Action VR Lab</a> <br>
-				Research Assistant to Professor <b>Dana Ballard</b>.
 				</p>
 		</td></tr></table>
 		<hr>
 
 		<br>
-	</div><br>
+	</div><br> -->
 
-	<!-- Experience -->
+	<!-- Highlight -->
 	<div class="container">
-		<h3 id="Experience" style="padding-top: 80px; margin-top: -80px;">Experience</h3><hr>
+		<h4 id="" style="padding-top: 80px; margin-top: -80px;">Research Highlight</h4><hr>
 
-		<table class="imgtable"><tr><td>
-			<img src="img/facebook.png" alt="Facebook" width="100px" height="100px" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td align="left">
-				<p><i>Mar. 2020 - present</i> <br>
-				<b> Facebook </b> <br>
-				Software Engineer<br>
-				</p>
-		</td></tr></table>	
-
-		<table class="imgtable"><tr><td>
-			<img src="img/facebook.png" alt="Facebook" width="100px" height="100px" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td align="left">
-				<p><i>May. 2019 - Aug. 2019</i> <br>
-				<b> Facebook </b> <br>
-				Software Engineering Intern<br>
-				</p>
-		</td></tr></table>	
-
-		<table class="imgtable"><tr><td>
-			<img src="img/microsoft.jpeg" alt="Microsoft" width="100px" height="100px" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
-			<td align="left">
-				<p><i>Sep. 2017 - Jan. 2018</i> <br>
-				<a target="_blank" href="https://www.microsoft.com/en-us/research/group/bdm/">Big Data Mining Group</a>, 
-				<b><a target="_blank" href="http://www.msra.cn/">Microsoft Research Asia</a></b><br>
-				Software Engineering Intern<br>
-				</p>
-		</td></tr></table>	
-		<hr>
+		<div class="row">
+			<div class="twelve columns" style="margin-top: 0%">
+				<video style="display: block; margin-left: auto; margin-right: auto; width: 50%; height: auto;" controls autoplay muted loop>
+					<source src="img/moviegen.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</div>
+		<div align="center">
+		  <p style="margin-top: 20px; font-size: 20px;"><a target="_blank" href="https://ai.meta.com/research/movie-gen/">Meta Movie Gen</a>: the most advanced media foundation models.</p>
+	 	</div>
 
 		<br>
-	</div><br>
+	</div>
 
-	
+
 	<!-- Research -->
 	<!-- <div class="container">
 		<h3 id="Research" style="padding-top: 80px; margin-top: -80px;">Research</h3><hr>
@@ -213,7 +188,7 @@
 
 				My work was to model visual attention from human eye movement data using a deep learning approach. I helped conduct psychophysical experiments that collect high-precision human eye tracking data when playing video games, and designed a three-channel convolution-deconvolution deep neural network, that simultaneously takes game image frames, motion information (optical flow), and image saliency information to predict where the human would allocate visual attention when playing the game. Eventually I obtained a deep neural network model that can predict human visual attention with high precision. We also experimented on using this visual attention model to facilitate the learning process of deep reinforcement learning and deep imitation learning algorithms.
 				</p><hr>
-				
+
 			<h4 style="padding-top: 80px; margin-top: -80px;">Text effects transfer</h4>
 				<p>Time: <i>Mar. 2017 - Jun. 2017</i></p>
 				<img src="img/text_transfer.png" height="180px">
@@ -226,128 +201,203 @@
 				<br>
 				<p>I participated in an interdisciplinary project between computer vision and archaeological conservation, in which we attempted to repair the faces of the Buddha of Longmen Grottoes using archived photos and display them on a virtual reality (VR) system. I was responsible for designing the VR user interface based on gesture recognition to enable the visitors to instruct the system to display the images, show text descriptions, or start the voice guide. I used Hidden Markov Model to implement a three-class gesture recognition, achieving an accuracy of 96% which met the requirements of the project.
 				</p><hr>
-		
+
 		<br>
 	</div><br> -->
-	
-	
+
+
 	<!-- Publications -->
 	<div class="container">
-		<h3 id="Publications" style="padding-top: 80px; margin-top: -80px;">Publications</h3><hr>
+		<h4 id="Publications" style="padding-top: 80px; margin-top: -80px;">Publications</h4><hr>
 
 		<div class="row">
-			<div class="col-md-3">
-				<img class="img-fluid img-rounded" src="img/cloth.png" alt="" height="180px">
+			<div class="col-md-9">
+			<b>Movie Gen: A Cast of Media Foundation Models</b><br>
+			<b>Core Contributor</b>, The Movie Gen Team.<br>
+			<b>Meta Technical Report, 2024</b><br>
+			<a target="_blank" href="https://ai.meta.com/static-resource/movie-gen-research-paper"> <small>[PDF]</small></a>
+			<a target="_blank" href="https://ai.meta.com/research/movie-gen/"> <small>[Blog]</small></a>
+			<a target="_blank" href="https://www.youtube.com/watch?v=FHSSx4dUs7E"> <small>[Video]</small></a>
+			<a target="_blank" href="https://github.com/facebookresearch/MovieGenBench"> <small>[Bench]</small></a>
 			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-9">
+			<b>Animated Stickers: Bringing Stickers to Life with Video Diffusion</b><br>
+			David Yan, Winnie Zhang, <b>Luxin Zhang</b>, Anmol Kalia, Dingkang Wang, Ankit Ramchandani, Miao Liu, Albert Pumarola, Edgar Schoenfeld, Elliot Blanchard, Krishna Narni, Yaqiao Luo, Lawrence Chen, Guan Pang, Ali Thabet, Peter Vajda, Amy Bearman, Licheng Yu<br>
+			<b>arXiv Preprint 2024</b><br>
+			<a target="_blank" href="https://arxiv.org/pdf/2402.06088"> <small>[PDF]</small></a>
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-9">
+			<b>AVID: Any-Length Video Inpainting with Diffusion Model</b><br>
+			Zhixing Zhang, Bichen Wu, Xiaoyan Wang, Yaqiao Luo, <b>Luxin Zhang</b>, Yinan Zhao, Peter Vajda, Dimitris Metaxas, Licheng Yu <br>
+			<b>CVPR 2024</b><br>
+			<a target="_blank" href="https://openaccess.thecvf.com/content/CVPR2024/papers/Zhang_AVID_Any-Length_Video_Inpainting_with_Diffusion_Model_CVPR_2024_paper.pdf"> <small>[PDF]</small></a>
+			<a target="_blank" href="https://zhang-zx.github.io/AVID/"> <small>[Project]</small></a>
+			<a target="_blank" href="https://github.com/zhang-zx/AVID"> <small>[Code]</small></a>
+			</div>
+		</div><br>
+
+		<div class="row">
 			<div class="col-md-9">
 			<b><font color="black">Cloth Region Segmentation for Robust Grasp Selection</font></b><br>
-			J. Qian*, <a target="_blank" href="https://thomasweng.com/">T. Weng*,
-			<a target="_blank" href="http://lucinezhang.github.io"><u><font color="black">L. Zhang</font></u></a>, B. Okorn and 
-			<a target="_blank" href="https://davheld.github.io/">D. Held</a>
-			<br>
-			<i><a target="_blank" href="https://eccv2018.org/">IROS 2020</a></i>, Las Vegas, USA, Oct. 2020<br>
+			Jianing Qian, Thomas Weng, <b>Luxin Zhang</b>, Brian Okorn, David Held<br>
+			<b>IROS 2020</b><br>
 			<a target="_blank" href="https://arxiv.org/pdf/2008.05626"> <small>[PDF]</small></a>
 			</div>
-		</div><hr>
+		</div><br>
 
 		<div class="row">
-			<div class="col-md-3">
-				<img class="img-fluid img-rounded" src="img/dataset.png" alt="" height="180px">
-			</div>
 			<div class="col-md-9">
 			<b><font color="black">Atari-head: Atari Human Eye-Tracking and Demonstration Dataset</font></b><br>
-			<a target="_blank" href="http://www.cs.utexas.edu/~zharucs/">R. Zhang</a>, C. Walshe, Z. Liu, L. Guan, K. Mulle, J. Whritner, 
-			<a target="_blank" href="http://lucinezhang.github.io"><u><font color="black">L. Zhang</font></u></a>, 
-			<a target="_blank" href="https://liberalarts.utexas.edu/cps/faculty/profile.php?id=mmh739">M. Hayhoe</a> and 
-			<a target="_blank" href="http://www.cs.utexas.edu/~dana/">D. Ballard</a>
-			<br>
-			<i><a target="_blank" href="https://eccv2018.org/">AAAI 2020</a></i>, New York, USA, Feb. 2020<br>
+			Ruohan Zhang, Calen Walshe, Zhuode Liu, Lin Guan, Karl Muller, Jake Whritner, <b>Luxin Zhang</b>, Mary Hayhoe, Dana Ballard<br>
+			<b>AAAI 2020</b><br>
 			<a target="_blank" href="https://ojs.aaai.org/index.php/AAAI/article/download/6161/6017"> <small>[PDF]</small></a>
 			</div>
-		</div><hr>
+		</div><br>
 
 		<div class="row">
-			<div class="col-md-3">
-				<img class="img-fluid img-rounded" src="img/seaquest.png" alt="" height="180px">
+			<div class="col-md-9">
+			<b><font color="black">Modelling complex perception-action choices</font></b><br>
+			Ruohan Zhang, Jake Whritner, Zhuode Liu, <b>Luxin Zhang</b>, Karl Muller, Mary Hayhoe, Dana Ballard<br>
+			<b>Journal of Vision 2018</b><br>
+			<a target="_blank" href="https://jov.arvojournals.org/article.aspx?articleid=2699524"> <small>[Link]</small></a>
 			</div>
+		</div><br>
+
+		<div class="row">
 			<div class="col-md-9">
 			<b><font color="black">AGIL: Learning Attention from Human for Visuomotor Tasks</font></b><br>
-			<a target="_blank" href="http://www.cs.utexas.edu/~zharucs/">R. Zhang</a>, Z. Liu, 
-			<a target="_blank" href="http://lucinezhang.github.io"><u><font color="black">L. Zhang</font></u></a>, J. Whritner, K. Muller, 
-			<a target="_blank" href="https://liberalarts.utexas.edu/cps/faculty/profile.php?id=mmh739">M. Hayhoe</a> and 
-			<a target="_blank" href="http://www.cs.utexas.edu/~dana/">D. Ballard</a>
-			<br>
-			<i><a target="_blank" href="https://eccv2018.org/">ECCV 2018</a></i>, Munich, Germany, Sep. 2018<br>
+			Ruohan Zhang, Zhuode Liu, <b>Luxin Zhang</b>, Jake A Whritner, Karl S Muller, Mary M Hayhoe, Dana H Ballard<br>
+			<b>ECCV 2018</b><br>
 			<a target="_blank" href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Ruohan_Zhang_AGIL_Learning_Attention_ECCV_2018_paper.pdf"> <small>[PDF]</small></a>
 			</div>
-		</div><hr>
+		</div><br>
 
 		<div class="row">
-			<div class="col-md-3">
-				<img class="img-fluid img-rounded" src="img/gaze_network.png" alt="">
-			</div>
 			<div class="col-md-9">
 			<b><font color="black">Learning Attention Model from Human for Visuomotor Tasks</font></b><br>
-			<a target="_blank" href="http://lucinezhang.github.io"><u><font color="black">L. Zhang</font></u></a>,
-			<a target="_blank" href="http://www.cs.utexas.edu/~zharucs/">R. Zhang</a>, 
-			Z. Liu, 
-			<a target="_blank" href="https://liberalarts.utexas.edu/cps/faculty/profile.php?id=mmh739">M. Hayhoe</a> 
-			and 
-			<a target="_blank" href="http://www.cs.utexas.edu/~dana/">D. Ballard</a>
-			<br>
-			<i><a target="_blank" href="https://aaai.org/Conferences/AAAI-18/aaai18studentcall/">AAAI'18 Student Abstract and Poster Program</a></i>, New Orleans, Louisiana, USA, Feb. 2018<br>
-			<a target="_blank" href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16296/16528"> <small>[PDF]</small></a>
+			<b>Luxin Zhang</b>, Ruohan Zhang, Zhuode Liu, Mary Hayhoe, Dana Ballard<br>
+			<b>AAAI 2018</b><br>
+			<a target="_blank" href="https://ojs.aaai.org/index.php/AAAI/article/view/12147/12006"> <small>[PDF]</small></a>
 			<a target="_blank" href="https://www.youtube.com/watch?v=-zTX9VFSFME"> <small>[Video]</small></a>
 			</div>
-		</div><hr>
+		</div><br>
 
 		<div class="row">
-			<div class="col-md-3">
-				<img class="img-fluid img-rounded" src="img/action_network.png" alt="">
-			</div>
 			<div class="col-md-9">
-			<b><font color="black">Visual Attention Guided Deep Imitation Learning</font></b>
-			<br>
-			<a target="_blank" href="http://www.cs.utexas.edu/~zharucs/">R. Zhang</a>, 
-			Z. Liu, 
-			<a target="_blank" href="http://lucinezhang.github.io"><u><font color="black">L. Zhang</font></u></a>,
-			K. Muller, 
-			<a target="_blank" href="https://liberalarts.utexas.edu/cps/faculty/profile.php?id=mmh739">M. Hayhoe</a> 
-			and 
-			<a target="_blank" href="http://www.cs.utexas.edu/~dana/">D. Ballard</a>
-			<br>
-			spotlight paper, 
-			<i><a target="_blank" href="https://sites.google.com/view/ciai2017/home">NIPS'17 Cognitively Informed Artificial Intelligence Workshop</a></i>, Long Beach, California, USA, Dec. 2017<br>
+			<b><font color="black">Visual Attention Guided Deep Imitation Learning</font></b><br>
+			Ruohan Zhang, Zhuode Liu, <b>Luxin Zhang</b>, Karl S Muller Mary M Hayhoe, Dana H Ballard<br>
+			spotlight paper,
+			<b>NIPS 2017 Cognitively Informed Artificial Intelligence Workshop</b><br>
 			<a target="_blank" href="https://pdfs.semanticscholar.org/8d95/238dbe37e3dae4f6d81aea6663e143e02a62.pdf"> <small>[PDF]</small></a>
 			</div>
-		</div><hr>
-		
+		</div>
 		<br>
 	</div><br>
-	
-	
+
+	<!-- Experience -->
+	<div class="container">
+		<h4 id="Experience" style="padding-top: 80px; margin-top: -80px;">Experience</h4><hr>
+
+		<table class="imgtable"><tr><td>
+			<img src="img/meta.png" alt="Meta" width="70px" height="70px" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td align="left">
+				<p><i>Feb. 2023 - present</i> <br>
+				<b> Meta, GenAI </b> <br>
+				Research Engineer<br>
+				</p>
+		</td></tr></table>
+
+		<table class="imgtable"><tr><td>
+			<img src="img/meta.png" alt="Meta" width="70px" height="70px" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td align="left">
+				<p><i>Mar. 2020 - Feb. 2023</i> <br>
+				<b> Meta, Reality Lab </b> <br>
+				Software Engineer<br>
+				</p>
+		</td></tr></table>
+
+		<table class="imgtable"><tr><td>
+			<img src="img/facebook.png" alt="Facebook" width="70px" height="70px" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td align="left">
+				<p><i>May. 2019 - Aug. 2019</i> <br>
+				<b> Facebook </b> <br>
+				Software Engineer Intern<br>
+				</p>
+		</td></tr></table>
+
+		<table class="imgtable"><tr><td>
+			<img src="img/cmu.png" alt="CMU" width="70px" height="70px" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td align="left">
+				<p><i>Feb. 2019 - Dec. 2019</i> <br>
+				<a target="_blank" href="https://r-pad.github.io/">The Robots Perceiving and Doing (RPAD) Lab</a>,
+				<b><a target="_blank" href="https://www.cmu.edu/">Carnegie Mellon University</a></b><br>
+				Research Assistant to Professor <a target="_blank" href="https://davheld.github.io/">David Held</a> <br>
+				</p>
+		</td></tr></table>
+
+		<table class="imgtable"><tr><td>
+			<img src="img/microsoft.jpeg" alt="Microsoft" width="70px" height="70px" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td align="left">
+				<p><i>Sep. 2017 - Jan. 2018</i> <br>
+				Big Data Mining Group,
+				<b><a target="_blank" href="http://www.msra.cn/">Microsoft Research Asia</a></b><br>
+				Research Engineer Intern<br>
+				Supervised by Dr. <a target="_blank" href="https://tellarin.com/borje/">Borje Karlsson</a>
+				</p>
+		</td></tr></table>
+
+		<table class="imgtable"><tr><td>
+			<img src="img/utaustin.png" alt="UT-Austin" width="70px" height="70px" />&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td align="left">
+				<p><i>Jul. 2017 - Sep. 2017</i> <br>
+				<a target="_blank" href="http://www.cs.utexas.edu/~dana/vrlab/">Vision, Cognition, and Action VR Lab</a>,
+				<b><a target="_blank" href="https://www.utexas.edu/">The University of Texas at Austin</a></b><br>
+				Research Assistant to Professor <a target="_blank" href="https://www.cs.utexas.edu/~dana/">Dana Ballard</a>.
+				</p>
+		</td></tr></table>
+
+		<table class="imgtable"><tr><td>
+			<img src="img/pku.png" alt="Peking" width="70px" height="70px"/>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td align="left">
+				<p><i>Sep. 2016 - Sep. 2017</i> <br>
+				<a target="_blank" href="http://39.96.165.147/struct.html">Spatial and Temporal Restoration, Understanding and Compression Team (STRUCT)</a>,
+				<b><a target="_blank" href="http://english.pku.edu.cn/">Peking University</a></b><br>
+				Research Assistant to Professor <a target="_blank" href="http://39.96.165.147/people/liujiaying.html">Jiaying Liu</a>
+				</p>
+		</td></tr></table>
+
+		<br>
+	</div>
+
+
 	<!-- Projects -->
 	<!-- <div class="container">
 		<h3 id="Projects" style="padding-top: 80px; margin-top: -80px;">Projects</h3><hr>
-		
+
 			<h4 id="Project1" style="padding-top: 80px; margin-top: -80px;">Static and Dynamic Gesture Recognition</h4>
 				<img src="img/static_gesture.png" height="180px">
 				<img src="img/3DCNN.png" height="180px">
 				<br><br>
 				<p>We implemented static gesture recognition using a convolutional neural network, obtained an accuracy of 90% on <a target="_blank" href="http://www.idiap.ch/resource/gestures/">Sebastien Marcel Static Hand Posture Database</a> (6 categories). We also extended to use this gesture recognition model to control the Dino Jump game.<br>
-					
+
 				We also implemented dynamic gesture recognition using a two-stream 3D convolutional neural network, obtained an accuracy of 91% on <a target="_blank" href="http://lshao.staff.shef.ac.uk/data/SheffieldKinectGesture.htm">Sheffield KInect Gesture (SKIG) Dataset</a> (10 categories).
 				</p>
 				<a target="_blank" href="https://github.com/lucinezhang/GestureRecognition"><small>[Source Code]</small></a>
-		
+
 			<hr>
-			
+
 			<h4 id="Project2" style="padding-top: 80px; margin-top: -80px;">Text and Image Classification</h4>
 				<img src="img/text_classify.png" height="180px">
 				<img src="img/image_classify.png" height="180px">
 				<br><br>
 				<p>We implemented text classification using <i>scikit-learn</i>. Compared the performance of different classifiers (Naive Bayesian, SVM, SGD, Decision Tree, KNN, K-means), achieved 85% accuracy (9 categories).<br>
-					
+
 				We also implemented images classification using <i>Keras</i> on a subset of ImageNet, achieved 80% accuracy (19 categories). We designed a CNN which consists of 3 convolutional layers followed by pooling layers and one fully connected layer.
 				</p>
 				<a target="_blank" href="https://github.com/lucinezhang/Machine-Learning--Classification"> <small>[Source Code]</small></a>
@@ -405,26 +455,18 @@
 		<br>
 	</div><br> -->
 
-	
+
 	<!-- Honor -->
-	<div class="container">
+	<!-- <div class="container">
 		<h3 id="Honors" style="padding-top: 80px; margin-top: -80px;">Honors and Awards</h3><hr>
 		<ul>
 			<li><p><b>Outstanding Research Award</b>, Peking University, 2015~2016</p></li>
 			<li><p><b>Wu Si Scholarship</b>, Peking University, 2015~2016</p></li>
 			<li><p><b>Chang Fei Scholarship</b>, School of EECS, Peking University, 2016~2017</p></li>
 		</ul><hr>
-		
-		<br>		
-	</div><br>
-	
-	
-	<!-- Contact -->
-	<div class="container">
-		<h3 id="Contact" style="padding-top: 80px; margin-top: -80px;">Contact</h3><hr>
-		luxinz [at] fb [dot] com<br>
-		luxinz [at] alumni [dot] cmu [dot] edu<br>
-	</div>
+
+		<br>
+	</div><br> -->
 
 	<div class="container">
 		<hr>
@@ -433,7 +475,7 @@
 			</script>
 			<br><hr> -->
 			<footer>
-				<p>&copy; Luxin Zhang 2020-2021</p>
+				<p>&copy; Luxin Zhang 2025</p>
 			</footer>
 		</center>
 	</div>
